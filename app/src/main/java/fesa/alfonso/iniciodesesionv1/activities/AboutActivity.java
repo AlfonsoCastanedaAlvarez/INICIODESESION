@@ -1,6 +1,5 @@
 package fesa.alfonso.iniciodesesionv1.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,13 +11,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import fesa.alfonso.iniciodesesionv1.R;
 
-public class MenuActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_about);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -26,8 +25,8 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
-    public void about(View view){
-        Intent intent= new Intent(this, AboutActivity.class);
-        startActivity(intent);
+    public void atras(View view) {
+        finish();
+
     }
 }

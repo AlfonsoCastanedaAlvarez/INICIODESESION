@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InicioDeSesionV1">
         <activity
+            android:name=".activities.AboutActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.MenuActivity"
             android:exported="false" />
         <activity
